@@ -1,8 +1,15 @@
 version: "3.9"
 services:
-  novnc:
-    image: dorowu/ubuntu-desktop-lxde-vnc:latest
+  # novnc:
+  #   image: dorowu/ubuntu-desktop-lxde-vnc:latest
+  #   ports:
+  #     - 6080:80
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  dlc:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    image: denden047/deeplabcut
     ports:
-      - 6080:80
-    volumes:
-      - /dev/shm:/dev/shm
+      - 2351:8888
