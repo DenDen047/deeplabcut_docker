@@ -7,7 +7,7 @@ $ chmod +x run.sh
 $ ./run.sh
 ```
 
-Access to `localhost:6080`.
+Access to `http://localhost:6080`.
 
 In the VNC, open a terminal, and run the following command:
 ```
