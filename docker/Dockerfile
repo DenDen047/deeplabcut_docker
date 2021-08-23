@@ -37,3 +37,13 @@ ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs:${LIBRARY_PATH}
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES all
 ENV NVIDIA_REQUIRE_CUDA "cuda>=10.0"
+
+# # AniPose
+# RUN pip3 install -U \
+#     -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 \
+#     wxPython
+# # RUN pip3 uninstall opencv-python
+# RUN pip3 install anipose
+# RUN pip3 install mayavi
+# RUN pip3 install ffmpeg-python
+# RUN pip3 install --upgrade apptools
