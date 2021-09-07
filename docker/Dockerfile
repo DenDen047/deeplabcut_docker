@@ -40,3 +40,9 @@ ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs:${LIBRARY_PATH}
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES all
 ENV NVIDIA_REQUIRE_CUDA "cuda>=11.0"
+
+# language settings
+RUN apt-get install -y locales
+RUN locale-gen "en_US.UTF-8"
+RUN locale-gen "en_GB.UTF-8"
+RUN dpkg-reconfigure locales
