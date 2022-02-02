@@ -10,10 +10,4 @@ docker run -it --rm \
     -v "$CURRENT_PATH"/data:/data \
     -p 2351:8888 \
     -p 6080:80 \
-    ${IMAGE_NAME} \
-    /bin/bash
-    # /bin/bash -c " \
-    #     conda init /bin/bash && \
-    #     conda activate acinoset && \
-    #     jupyter lab --allow-root --NotebookApp.token='bakaga36' --ip=* --no-browser \
-    # "
+    ${IMAGE_NAME}

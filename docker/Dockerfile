@@ -45,4 +45,4 @@ ENV NVIDIA_REQUIRE_CUDA "cuda>=11.0"
 RUN apt-get install -y locales
 RUN locale-gen "en_US.UTF-8"
 RUN locale-gen "en_GB.UTF-8"
-RUN dpkg-reconfigure locales
+# RUN dpkg-reconfigure locales
