@@ -4,9 +4,9 @@ import glob
 from pprint import pprint
 
 
-DATA_ROOT_DIR = '/Users/ikuta/Documents/Projects/AcinoSet/data'  # contain relative video-dir paths
-TARGET_DIR = '.'
-VIDEO_DIR_PATH_FILE = 'video_paths.txt'
+DATA_ROOT_DIR = '/home/naoya/Documents/AcinoSet'
+TARGET_DIR = '/home/naoya/Documents/dlc_videos'
+VIDEO_DIR_PATH_FILE = 'video_paths.txt'  # contain relative video-dir paths
 
 
 if __name__ == '__main__':
